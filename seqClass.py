@@ -29,5 +29,5 @@ if args.motif:
     if re.search(args.motif, args.seq):
         print("FOUND")
     else:
-        print("NOT FOUND")
+        print("DIDT FOUND IT")
 parser.add_argument("-m", "--motif", type = str, required = False, help = "Motif")
