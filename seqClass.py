@@ -4,7 +4,10 @@
 import sys, re
 from argparse import ArgumentParser
 
-parser = ArgumentParser(description = '2 a sequence as DNA or RNA')
+ 
+
+
+parser = ArgumentParser(description = '1 a sequence as DNA or RNA')
 parser.add_argument("-s", "--seq", type = str, required = True, help = "Input sequence")
 
 if len(sys.argv) == 1:
@@ -27,7 +30,7 @@ if args.motif:
     args.motif = args.motif.upper()
     print(f'Motif search enabled: looking for motif "{args.motif}" in sequence "{args.seq}"... ', end = '')
     if re.search(args.motif, args.seq):
-        print("FOUND")
+        print("FOUND IT")
     else:
-        print("NOT FOUND")
+        print("DIDT FOUND IT")
 parser.add_argument("-m", "--motif", type = str, required = False, help = "Motif")
