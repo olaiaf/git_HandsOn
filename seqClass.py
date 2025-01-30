@@ -25,9 +25,9 @@ if re.fullmatch(r'^[ACGTU]+$', args.seq):
     if 'T' in args.seq and 'U' in args.seq:
         print("The sequence contains both T and U, which is invalid.")
     elif 'T' in args.seq:
-        print("The sequence is DNA")
+        print("The sequence is DNA") #DNA
     elif 'U' in args.seq:
-        print("The sequence is RNA")
+        print("The sequence is RNA") #RNA
     else:
         print("The sequence can be DNA or RNA")
 else:
